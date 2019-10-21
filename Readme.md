@@ -15,9 +15,10 @@ Console que envia mensagens para o tópico utilizando as bibliotecas do mass tran
 
 Console que envia mensagens para o tópico utilizando as bibliotecas do azure service bus
 
-OBS: é necessário seguir o envelopamento do mass transit para o consumidor conseguir interpretar a mensagem
+OBS: 
+- É necessário seguir o envelopamento do mass transit para o consumidor conseguir interpretar a mensagem
 https://masstransit-project.com/MassTransit/advanced/interoperability.html#example-message
-Também é preciso respeitar o content type
+- Também é preciso respeitar o content type
 https://masstransit-project.com/MassTransit/advanced/interoperability.html#jsonbsonxml
 
 
