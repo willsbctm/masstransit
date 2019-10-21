@@ -1,4 +1,4 @@
-# Masstransit 
+# Masstransit e Azure Service Bus 
 https://masstransit-project.com/MassTransit/
 
 ## MassTransitWorker
@@ -19,7 +19,7 @@ Também é preciso respeitar o content type
 https://masstransit-project.com/MassTransit/advanced/interoperability.html#jsonbsonxml
 
 
-
+## Importante
 
 Em todas os casos é necessário respeitar o Message Type que deve corresponder ao namespace da interface que representa a mensagem:
 https://masstransit-project.com/MassTransit/usage/message-contracts.html
