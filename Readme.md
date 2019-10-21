@@ -1,5 +1,7 @@
-# Masstransit e Azure Service Bus 
+# Mass Transit e Azure Service Bus 
 https://masstransit-project.com/MassTransit/
+
+A solução permite enviar mensagens à um tópico do azure service bus através da bibliteca do mass transit e sem a mesma.
 
 ## MassTransitWorker
 
@@ -7,13 +9,13 @@ Worker que recebe todas as mensagens do tópico
 
 ## MassTransitConsole
 
-Console que envia mensagens para o tópico utilizando as bibliotecas do masstransit
+Console que envia mensagens para o tópico utilizando as bibliotecas do mass transit
 
 ## MassTransitConcolserServiceBus
 
 Console que envia mensagens para o tópico utilizando as bibliotecas do azure service bus
 
-OBS: é necessário seguir o envelopamento do masstransit para o consumidor conseguir interpretar a mensagem
+OBS: é necessário seguir o envelopamento do mass transit para o consumidor conseguir interpretar a mensagem
 https://masstransit-project.com/MassTransit/advanced/interoperability.html#example-message
 Também é preciso respeitar o content type
 https://masstransit-project.com/MassTransit/advanced/interoperability.html#jsonbsonxml
@@ -21,7 +23,11 @@ https://masstransit-project.com/MassTransit/advanced/interoperability.html#jsonb
 
 ## Importante
 
-Em todas os casos é necessário respeitar o Message Type que deve corresponder ao namespace da interface que representa a mensagem:
+- Em todas os casos é necessário respeitar o Message Type que deve corresponder ao namespace da interface que representa a mensagem:
 https://masstransit-project.com/MassTransit/usage/message-contracts.html
 Para isso, foi utilizada uma biblioteca compartilhada de contratos
+
+
+- É necessário que a conta presenta na connection string do azure service bus tenha permissão de adminstrador porque o mass transit cria os recuros necessários para seu funcionamento
+http://masstransit-project.com/MassTransit/understand/under-the-hood.html#starting-a-bus
 
