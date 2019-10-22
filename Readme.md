@@ -11,7 +11,7 @@ Worker que recebe todas as mensagens do tópico
 
 Console que envia mensagens para o tópico utilizando as bibliotecas do mass transit
 
-## MassTransitConcolserServiceBus
+## MassTransitConsoleServiceBus
 
 Console que envia mensagens para o tópico utilizando as bibliotecas do azure service bus
 
@@ -29,6 +29,6 @@ https://masstransit-project.com/MassTransit/usage/message-contracts.html
 Para isso, foi utilizada uma biblioteca compartilhada de contratos
 
 
-- É necessário que a conta presenta na connection string do azure service bus tenha permissão de adminstrador porque o mass transit cria os recuros necessários para seu funcionamento
+- É necessário que a conta presente na connection string do azure service bus tenha permissão de adminstrador porque o mass transit cria os recursos necessários para seu funcionamento
 http://masstransit-project.com/MassTransit/understand/under-the-hood.html#starting-a-bus
 
