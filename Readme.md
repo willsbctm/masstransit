@@ -1,34 +1,34 @@
 # Mass Transit e Azure Service Bus 
 https://masstransit-project.com/MassTransit/
 
-A soluï¿½ï¿½o permite enviar mensagens ï¿½ um tï¿½pico do azure service bus atravï¿½s da bibliteca do mass transit e sem a mesma.
+A solução permite enviar mensagens à um tópico do azure service bus através da bibliteca do mass transit e sem a mesma.
 
 ## MassTransitWorker
 
-Worker que recebe todas as mensagens do tï¿½pico
+Worker que recebe todas as mensagens do tópico
 
 ## MassTransitConsole
 
-Console que envia mensagens para o tï¿½pico utilizando as bibliotecas do mass transit
+Console que envia mensagens para o tópico utilizando as bibliotecas do mass transit
 
-## MassTransitConsoleServiceBus
+## MassTransitConcolserServiceBus
 
-Console que envia mensagens para o tï¿½pico utilizando as bibliotecas do azure service bus
+Console que envia mensagens para o tópico utilizando as bibliotecas do azure service bus
 
 OBS: 
-- ï¿½ necessï¿½rio seguir o envelopamento do mass transit para o consumidor conseguir interpretar a mensagem
+- É necessário seguir o envelopamento do mass transit para o consumidor conseguir interpretar a mensagem
 https://masstransit-project.com/MassTransit/advanced/interoperability.html#example-message
-- Tambï¿½m ï¿½ preciso respeitar o content type
+- Também é preciso respeitar o content type
 https://masstransit-project.com/MassTransit/advanced/interoperability.html#jsonbsonxml
 
 
 ## Importante
 
-- Em todas os casos ï¿½ necessï¿½rio respeitar o Message Type que deve corresponder ao namespace da interface que representa a mensagem:
+- Em todas os casos é necessário respeitar o Message Type que deve corresponder ao namespace da interface que representa a mensagem:
 https://masstransit-project.com/MassTransit/usage/message-contracts.html
 Para isso, foi utilizada uma biblioteca compartilhada de contratos
 
 
-- ï¿½ necessï¿½rio que a conta presente na connection string do azure service bus tenha permissï¿½o de adminstrador porque o mass transit cria os recursos necessï¿½rios para seu funcionamento
+- É necessário que a conta presenta na connection string do azure service bus tenha permissão de adminstrador porque o mass transit cria os recuros necessários para seu funcionamento
 http://masstransit-project.com/MassTransit/understand/under-the-hood.html#starting-a-bus
 
