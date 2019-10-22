@@ -7,7 +7,7 @@ namespace MassTransitConsoleServiceBus
 {
     class Program
     {
-        const string ServiceBusConnectionString = "Endpoint=sb://will-sb-l3.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=u2eK55KmHAVzZqF8gHGJj5Q3NNlbsmcuGdHcU7PzbDk=";
+        const string ServiceBusConnectionString = "";
         const string TopicName = "topiccontract";
         static ITopicClient topicClient;
 
@@ -19,10 +19,6 @@ namespace MassTransitConsoleServiceBus
         static async Task MainAsync()
         {
             topicClient = new TopicClient(ServiceBusConnectionString, TopicName);
-
-            Console.WriteLine("======================================================");
-            Console.WriteLine("Press any key to exit after receiving all the messages.");
-            Console.WriteLine("======================================================");
 
             await SendMessagesAsync();
 

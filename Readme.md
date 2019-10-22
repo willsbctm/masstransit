@@ -32,3 +32,12 @@ Para isso, foi utilizada uma biblioteca compartilhada de contratos
 - É necessário que a conta presente na connection string do azure service bus tenha permissão de adminstrador porque o mass transit cria os recursos necessários para seu funcionamento
 http://masstransit-project.com/MassTransit/understand/under-the-hood.html#starting-a-bus
 
+## Execução
+
+Preencher a connection string do Azure Service Bus nos projetos:
+- MassTransitConsole
+- MassTransitConsoleServiceBus
+- MassTransitWorker
+
+Em seguida é possível iniciar todos os projetos.
+

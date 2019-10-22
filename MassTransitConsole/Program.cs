@@ -8,7 +8,7 @@ namespace MassTransitConsole
 {
     class Program
     {
-        const string ServiceBusConnectionString = "Endpoint=sb://will-sb-l3.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=u2eK55KmHAVzZqF8gHGJj5Q3NNlbsmcuGdHcU7PzbDk=";
+        const string ServiceBusConnectionString = "";
         const string TopicName = "topiccontract";
         static void Main(string[] args)
         {
